@@ -1,0 +1,146 @@
+/*Style for background image*/
+body {
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*Style for page Heading*/
+h1 {
+    font-family: 'Press Start 2P';
+    text-align: center;
+    color: grey;
+    font-size: 36px;
+}
+
+/*style for loading & positioning Modal*/
+#modal {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: none;  
+}
+
+/*Style/image for Modal textbox*/
+#modal-textbox {
+    background-image: url('./images/background1.gif');
+    height: 400px;
+    width: 1100px;
+    border: 6px solid silver;
+    margin: 100px auto;
+    border-radius: 20px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+/*Style for Open(Mission)/Close Button(Mission Accepted)*/
+.modal-buttons {
+        background-color: cyan;
+        justify-content: center;
+        padding: 10px;
+        margin: 10px;
+        border: 6px solid silver;
+        border-radius: 20px;
+        font-family: 'Press Start 2P';
+        text-decoration: none;
+        text-align: center;
+        color: rgb(88, 82, 82);
+        animation: glow 3s ease-in-out infinite alternate;
+        -webkit-animation: glow 3s ease-in-out infinite alternate;
+        font-size: 15px;
+}
+
+/*Positioning for open(Mission button)*/
+#openModal {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+}
+
+/*Style for reset button*/
+ #resetbutton {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    background-color:cyan;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border: 6px solid silver;
+    border-radius: 20px;
+    font-family: 'Press Start 2P';
+}
+
+/*Animation & more style for reset button*/
+.reset {
+        text-decoration: none;
+        text-align: center;
+        color: rgb(88, 82, 82);
+        -webkit-animation: glow 3s ease-in-out infinite alternate;
+        animation: glow 3s ease-in-out infinite alternate;
+        font-size: 15px;
+    }
+
+/* Button color & effects on hover*/
+    .modal-buttons:hover,
+    .modal-buttons:focus,
+    .modal-buttons:active,
+    .reset:hover,
+    .reset:focus,
+    .reset:active {
+        color: rgb(201, 31, 187);
+        background-color: purple;
+        border-radius: 20px;
+        padding: 10px;
+}
+
+/*Positon Modal footer in the right corner of the Modal textbox*/
+#modal-footer {
+    text-align: right;
+}
+
+/*Style Modal textbox content*/
+#modal-textbox p {
+    color: yellow;
+    text-align: center;
+    font-family:'Press Start 2P';
+    padding: 10px;
+}
+/*Space between heading & paragraphs*/
+h2 {
+    color: magenta;
+    text-align: center;
+    font-family:'Press Start 2P';
+    padding-bottom: 15px;
+}
+
+/*Changes the Modal textbox background to various color shades*/
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*Brightens the buttons appearance*/
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgb(250, 243, 243), 0 0 20px rgb(219, 219, 219),
+            0 0 30px #b9b9b9, 0 0 40px #969595, 0 0 50px #4d4c4c, 0 0 60px #222223,
+            0 0 70px #000000;
+    }
+}    
